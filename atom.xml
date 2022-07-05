@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Fishegg</title>
+  
+  
+  <link href="https://fisheggm.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://fisheggm.github.io/"/>
+  <updated>2022-07-04T13:10:27.058Z</updated>
+  <id>https://fisheggm.github.io/</id>
+  
+  <author>
+    <name>Fishegg</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo deploy无法跳转至一级页面的解决方法</title>
+    <link href="https://fisheggm.github.io/site/articles/2022/07/03/18/56/58/ca83b31ac1e7/y22m7d3h18m56s58--code1/hexo%20deploy%E6%97%A0%E6%B3%95%E8%B7%B3%E8%BD%AC%E8%87%B3%E4%B8%80%E7%BA%A7%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html"/>
+    <id>https://fisheggm.github.io/site/articles/2022/07/03/18/56/58/ca83b31ac1e7/y22m7d3h18m56s58--code1/hexo%20deploy%E6%97%A0%E6%B3%95%E8%B7%B3%E8%BD%AC%E8%87%B3%E4%B8%80%E7%BA%A7%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html</id>
+    <published>2022-07-03T10:56:58.000Z</published>
+    <updated>2022-07-04T13:10:27.058Z</updated>
+    
+    <content type="html"><![CDATA[<p>解决方法有两种。</p><span id="more"></span><p>第①种：<br>把hexo-renderer-markdown-it换成hexo-renderer-marked就行了。</p><figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> uninstall hexo-renderer-markdown-<span class="literal">it</span> &amp;&amp; <span class="built_in">npm</span> install hexo -renderer-marked</span><br></pre></td></tr></table></figure><p>或者把.deploy_git里的目录移入到名字为网站的一级目录的目录就done了.<br>example:<br>    fisheggM.github.io&#x2F;blogsite<br>    那么移入进名字为blogsite的目录</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;解决方法有两种。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="hexo特性" scheme="https://fisheggm.github.io/Tags/hexo-bugs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hello</title>
+    <link href="https://fisheggm.github.io/site/articles/2022/06/24/19/32/46/b6735b24e673/y22m6d24h19m32s46--code1/hello.html"/>
+    <id>https://fisheggm.github.io/site/articles/2022/06/24/19/32/46/b6735b24e673/y22m6d24h19m32s46--code1/hello.html</id>
+    <published>2022-06-24T11:32:46.000Z</published>
+    <updated>2022-07-04T13:13:50.950Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>hello world</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;hello world&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

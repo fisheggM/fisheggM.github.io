@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>hexo deploy无法跳转至一级页面的解决方法 | Fishegg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="hexo特性">
+    <meta name="description" content="解决方法有两种。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo deploy无法跳转至一级页面的解决方法">
+<meta property="og:url" content="https://fisheggm.github.io/site/articles/2022/07/03/18/56/58/ca83b31ac1e7/y22m7d3h18m56s58--code1/hexo%20deploy%E6%97%A0%E6%B3%95%E8%B7%B3%E8%BD%AC%E8%87%B3%E4%B8%80%E7%BA%A7%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html">
+<meta property="og:site_name" content="Fishegg">
+<meta property="og:description" content="解决方法有两种。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-07-03T10:56:58.000Z">
+<meta property="article:modified_time" content="2022-07-04T13:10:27.058Z">
+<meta property="article:author" content="Fishegg">
+<meta property="article:tag" content="hexo特性">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="Fishegg" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/brand.img">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.img)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avater.img">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Fishegg</h5>
+          <a href="mailto:yzx_3918988@163.com" title="yzx_3918988@163.com" class="mail">yzx_3918988@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/index.html"  >
+                <i class="icon icon-lg icon-home-index"></i>
+                主页html
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/Archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                文章
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/Tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/Categories"  >
+                <i class="icon icon-lg icon-Categories-list"></i>
+                分类-not done yet
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/atom.xml" target="_blank" >
+                <i class="icon icon-lg icon-XSS"></i>
+                XSS
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/fisheggM" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://gitee.com/fishegg" target="_blank" >
+                <i class="icon icon-lg icon-gitee"></i>
+                码云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://fisheggm.github.io"  >
+                <i class="icon icon-lg icon-REFRUSH"></i>
+                重新冲刷(确信)✔
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">hexo deploy无法跳转至一级页面的解决方法</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">hexo deploy无法跳转至一级页面的解决方法</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2022-07-03T10:56:58.000Z" itemprop="datePublished" class="page-time">
+  2022-07-03
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+
+<article id="post-hexo deploy无法跳转至一级页面的解决方法"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">hexo deploy无法跳转至一级页面的解决方法</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2022-07-03 18:56:58" datetime="2022-07-03T10:56:58.000Z"  itemprop="datePublished">2022-07-03</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>解决方法有两种。</p>
+<span id="more"></span>
+<p>第①种：<br>把hexo-renderer-markdown-it换成hexo-renderer-marked就行了。</p>
+<figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> uninstall hexo-renderer-markdown-<span class="literal">it</span> &amp;&amp; <span class="built_in">npm</span> install hexo -renderer-marked</span><br></pre></td></tr></table></figure>
+<p>或者把.deploy_git里的目录移入到名字为网站的一级目录的目录就done了.<br>example:<br>    fisheggM.github.io&#x2F;blogsite<br>    那么移入进名字为blogsite的目录</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2022-07-04T13:10:27.058Z" itemprop="dateUpdated">2022-07-04 21:10:27</time>
+</span><br>
+
+
+        
+        我没什么想说的
+        
+    </div>
+    
+    <footer>
+        <a href="https://fisheggm.github.io">
+            <img src="/img/avater.img" alt="Fishegg">
+            Fishegg
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/Tags/hexo-bugs/" rel="tag">hexo特性</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://fisheggm.github.io/site/articles/2022/07/03/18/56/58/ca83b31ac1e7/y22m7d3h18m56s58--code1/hexo%20deploy%E6%97%A0%E6%B3%95%E8%B7%B3%E8%BD%AC%E8%87%B3%E4%B8%80%E7%BA%A7%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html&title=《hexo deploy无法跳转至一级页面的解决方法》 — Fishegg&pic=https://fisheggm.github.io/img/avater.img" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://fisheggm.github.io/site/articles/2022/07/03/18/56/58/ca83b31ac1e7/y22m7d3h18m56s58--code1/hexo%20deploy%E6%97%A0%E6%B3%95%E8%B7%B3%E8%BD%AC%E8%87%B3%E4%B8%80%E7%BA%A7%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html&title=《hexo deploy无法跳转至一级页面的解决方法》 — Fishegg&source=解决方法有两种。" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://fisheggm.github.io/site/articles/2022/07/03/18/56/58/ca83b31ac1e7/y22m7d3h18m56s58--code1/hexo%20deploy%E6%97%A0%E6%B3%95%E8%B7%B3%E8%BD%AC%E8%87%B3%E4%B8%80%E7%BA%A7%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《hexo deploy无法跳转至一级页面的解决方法》 — Fishegg&url=https://fisheggm.github.io/site/articles/2022/07/03/18/56/58/ca83b31ac1e7/y22m7d3h18m56s58--code1/hexo%20deploy%E6%97%A0%E6%B3%95%E8%B7%B3%E8%BD%AC%E8%87%B3%E4%B8%80%E7%BA%A7%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html&via=https://fisheggm.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://fisheggm.github.io/site/articles/2022/07/03/18/56/58/ca83b31ac1e7/y22m7d3h18m56s58--code1/hexo%20deploy%E6%97%A0%E6%B3%95%E8%B7%B3%E8%BD%AC%E8%87%B3%E4%B8%80%E7%BA%A7%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/site/articles/2022/06/24/19/32/46/b6735b24e673/y22m6d24h19m32s46--code1/hello.html" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">hello</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'fisheggM',
+            repo: 'fisheggm.github.io--gitalk-repo',
+            oauth: {
+                client_id: '2cb3a276935617180bb2',
+                client_secret: 'cda81a66b74de8cf14ff6a46e2c9fa252650a739',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Fishegg &copy; 2022</span>
+            <span>
+                
+                
+                
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://fisheggm.github.io/site/articles/2022/07/03/18/56/58/ca83b31ac1e7/y22m7d3h18m56s58--code1/hexo%20deploy%E6%97%A0%E6%B3%95%E8%B7%B3%E8%BD%AC%E8%87%B3%E4%B8%80%E7%BA%A7%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html&title=《hexo deploy无法跳转至一级页面的解决方法》 — Fishegg&pic=https://fisheggm.github.io/img/avater.img" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://fisheggm.github.io/site/articles/2022/07/03/18/56/58/ca83b31ac1e7/y22m7d3h18m56s58--code1/hexo%20deploy%E6%97%A0%E6%B3%95%E8%B7%B3%E8%BD%AC%E8%87%B3%E4%B8%80%E7%BA%A7%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html&title=《hexo deploy无法跳转至一级页面的解决方法》 — Fishegg&source=解决方法有两种。" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://fisheggm.github.io/site/articles/2022/07/03/18/56/58/ca83b31ac1e7/y22m7d3h18m56s58--code1/hexo%20deploy%E6%97%A0%E6%B3%95%E8%B7%B3%E8%BD%AC%E8%87%B3%E4%B8%80%E7%BA%A7%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《hexo deploy无法跳转至一级页面的解决方法》 — Fishegg&url=https://fisheggm.github.io/site/articles/2022/07/03/18/56/58/ca83b31ac1e7/y22m7d3h18m56s58--code1/hexo%20deploy%E6%97%A0%E6%B3%95%E8%B7%B3%E8%BD%AC%E8%87%B3%E4%B8%80%E7%BA%A7%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html&via=https://fisheggm.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://fisheggm.github.io/site/articles/2022/07/03/18/56/58/ca83b31ac1e7/y22m7d3h18m56s58--code1/hexo%20deploy%E6%97%A0%E6%B3%95%E8%B7%B3%E8%BD%AC%E8%87%B3%E4%B8%80%E7%BA%A7%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,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" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '有个人走了,我不说';
+            clearTimeout(titleTime);
+        } else {
+            document.title = 'Fishegg';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
